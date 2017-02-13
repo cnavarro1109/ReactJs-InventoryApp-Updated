@@ -65,6 +65,9 @@ class App extends Component {
 
   }
 
+  //Allows us to edit the fields and set the data back to itself.
+  //It's a ReactJS requirement
+  //Here's a good reference: http://stackoverflow.com/questions/22220873/how-to-reload-input-value-in-react-javascript-with-virtual-dom
   _handleFirebaseFormChange(event) { 
     console.log("Field Updated");
     this.props.onChange(event.target.value);
